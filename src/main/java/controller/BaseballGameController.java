@@ -21,8 +21,9 @@ public class BaseballGameController {
     }
 
     public void setUserNumber() {
-        user.setUserBaseballNumber(InputView.setUserNumber());
+        user = new User(InputView.setUserNumber());
     }
+    
 
     public boolean isGameEnd() {
         return true;
