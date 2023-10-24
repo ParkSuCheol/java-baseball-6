@@ -16,14 +16,18 @@ public class BaseballGameController {
 
     public void startGame() {
         do {
-            setUserNumber();
+            getUserNumber();
         } while (!isGameEnd());
     }
 
     public void setUserNumber() {
         user = new User(InputView.setUserNumber());
     }
-    
+
+    public void getUserNumber() {
+        user.getUserBaseballNumber();
+    }
+
 
     public boolean isGameEnd() {
         return true;
